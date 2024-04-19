@@ -8,9 +8,14 @@
     "react-helmet": "^6.1.0",
     "react-scripts": "0.9.5"
   },
+  "devDependencies": {
+    "firebase": "^10.11.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "prepublish": "react-scripts test --env=jsdom",
+    "publish": "firebase deploy --only hosting",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
